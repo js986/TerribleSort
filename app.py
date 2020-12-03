@@ -27,13 +27,16 @@ def terribleSort(lst):
             for j in range(0,50):
                 for k in range(0,50):
                     matrix[j * 50 + i] += (math.fabs(pm.noiseList[j * 50 + i]) * cgol.cells[j * 50 + i])
-        num = matrix[0]
+        for ugh in range(0,len(matrix)):
+            num =+ matrix[ugh]
         intNum1 = math.floor(num) % len(lst)-1
+        num = 0
         for i in range(0,50):
             for j in range(0,50):
                 for k in range(0,50):
                     matrix[j * 50 + i] += math.fabs(pm.noiseList[j * 50 + i]) * cgol.cells[j * 50 + i]
-        num = matrix[25]
+        for ahh in range(0,len(matrix)):
+            num =+ matrix[ahh]
         intNum2 = math.floor(num) % len(lst)-1
 
         temp = lst[intNum1]
